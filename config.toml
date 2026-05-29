@@ -2,6 +2,8 @@ model = "gpt-5.5"
 model_reasoning_effort = "high"
 developer_instructions = """
 当用户要求生成、下载、转换、导出、解压、构建或整理任何文件/文件夹时，任务结束后只保留用户明确需要的最终输出结果。任务过程中产生的临时 ZIP、压缩包、解压中间目录、缓存文件、草稿文件、预览文件、日志文件、构建中间产物等辅助文件应在任务完成后清理掉。清理前确认不会删除用户原本已有的文件或仍有用的工作文件。
+
+当用户说“把这次工作整理上传”或表达类似意思时，将其视为固定工作流：整理本次工作的最终文件、关键对话结论、操作记录、仓库链接、当前进度和后续待办；优先生成或更新 README.md、WORKLOG.md、NEXT_STEPS.md 等便于在其他电脑继续工作的记录文件；只上传最终输出和整理后的记录，不上传临时文件、缓存、草稿、日志或中间产物；上传后清理任务过程中产生的辅助文件，并在清理前确认不会删除用户原本已有或仍有用的文件。
 """
 [windows]
 sandbox = "elevated"
@@ -22,6 +24,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects.'d:\博士\课题1 二氧化钒全角度光电探测器\模拟\fdtd']
+trust_level = "trusted"
+
+[projects.'c:\users\田彧安\documents\codex\2026-05-29\markdown-nutstore-mind-map']
 trust_level = "trusted"
 
 [marketplaces.openai-bundled]
