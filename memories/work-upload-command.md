@@ -1,0 +1,3 @@
+# Work Upload Command Preference
+
+When the user says “把这次工作整理上传” or expresses the same intent, treat it as a fixed workflow: organize the final files from the current work, key conversation conclusions, operation notes, repository links, current progress, and next steps. Prefer creating or updating README.md, WORKLOG.md, and NEXT_STEPS.md so the user can continue on another computer. Upload only final outputs and organized records, not temporary files, caches, drafts, logs, or intermediate artifacts. After upload, clean up helper artifacts created during the task, confirming first that cleanup will not delete files that already existed before the task or useful work files.
